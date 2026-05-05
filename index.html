@@ -103,6 +103,137 @@ body{
       <p>Don't have an account? <a href="#">Register</a></p>
     </div>
   </form>
+    <meta charset="UTF-8">
+    <title>Product Registration</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 420px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(18px);
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+            color: white;
+            transition: 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            background: rgba(255,255,255,0.18);
+            color: white;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #eee;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            background: rgba(255,255,255,0.28);
+            box-shadow: 0 0 12px rgba(255,255,255,0.4);
+        }
+
+        select option {
+            color: black;
+        }
+
+        button {
+            margin-top: 18px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #00f260, #0575e6);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Product Registration</h2>
+
+    <form>
+        <label>Product Name</label>
+        <input type="text" name="productName" placeholder="Enter product name" required>
+
+        <label>Product ID</label>
+        <input type="text" name="productId" placeholder="Enter product ID" required>
+
+        <label>Category</label>
+        <select name="category">
+            <option>Electronics</option>
+            <option>Clothing</option>
+            <option>Food</option>
+            <option>Cars</option>
+            <option>Other</option>
+        </select>
+
+        <label>Price (RWF)</label>
+        <input type="number" name="price" placeholder="Enter price" required>
+
+        <label>Quantity</label>
+        <input type="number" name="quantity" placeholder="Enter quantity" required>
+
+        <label>Description</label>
+        <textarea name="description" placeholder="Write product details..."></textarea>
+
+        <button type="submit">Register Product</button>
+    </form>
 </div>
 
 </body>
