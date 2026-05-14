@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Registration</title>
@@ -94,6 +95,205 @@
         button:hover{
             transform:scale(1.05);
             box-shadow:0 8px 25px rgba(0,0,0,0.3);
+=======
+<meta charset="UTF-8">
+<title>Login Form</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.container{
+  background:#fff;
+  padding:40px;
+  width:320px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.container h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.input-group{
+  margin-bottom:15px;
+}
+
+.input-group label{
+  display:block;
+  margin-bottom:5px;
+  font-size:14px;
+}
+
+.input-group input{
+  width:100%;
+  padding:10px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  outline:none;
+}
+
+.input-group input:focus{
+  border-color:#4facfe;
+}
+
+.btn{
+  width:100%;
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  background:#4facfe;
+  color:#fff;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#007bff;
+}
+
+.extra{
+  text-align:center;
+  margin-top:10px;
+  font-size:14px;
+}
+
+.extra a{
+  color:#4facfe;
+  text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Login</h2>
+  <form>
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="input-group">
+      <label>Password</label>
+      <input type="password" placeholder="Enter your password" required>
+    </div>
+
+    <button class="btn">Login</button>
+
+    <div class="extra">
+      <p>Don't have an account? <a href="#">Register</a></p>
+    </div>
+  </form>
+    <meta charset="UTF-8">
+    <title>Product Registration</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 420px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(18px);
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+            color: white;
+            transition: 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            background: rgba(255,255,255,0.18);
+            color: white;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #eee;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            background: rgba(255,255,255,0.28);
+            box-shadow: 0 0 12px rgba(255,255,255,0.4);
+        }
+
+        select option {
+            color: black;
+        }
+
+        button {
+            margin-top: 18px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #00f260, #0575e6);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+>>>>>>> origin/main
         }
     </style>
 </head>
@@ -101,6 +301,7 @@
 <body>
 
 <div class="container">
+<<<<<<< HEAD
     <h2>User Registration form</h2>
 
     <form>
@@ -135,6 +336,36 @@
 
         <button type="submit">Register</button>
 
+=======
+    <h2>Product Registration</h2>
+
+    <form>
+        <label>Product Name</label>
+        <input type="text" name="productName" placeholder="Enter product name" required>
+
+        <label>Product ID</label>
+        <input type="text" name="productId" placeholder="Enter product ID" required>
+
+        <label>Category</label>
+        <select name="category">
+            <option>Electronics</option>
+            <option>Clothing</option>
+            <option>Food</option>
+            <option>Cars</option>
+            <option>Other</option>
+        </select>
+
+        <label>Price (RWF)</label>
+        <input type="number" name="price" placeholder="Enter price" required>
+
+        <label>Quantity</label>
+        <input type="number" name="quantity" placeholder="Enter quantity" required>
+
+        <label>Description</label>
+        <textarea name="description" placeholder="Write product details..."></textarea>
+
+        <button type="submit">Register Product</button>
+>>>>>>> origin/main
     </form>
 </div>
 
