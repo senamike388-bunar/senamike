@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container{
+    width:420px;
+    padding:25px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(18px);
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+    color:white;
+    transition:0.3s;
+}
+
+.container:hover{
+    transform: translateY(-5px);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    font-size:13px;
+    opacity:0.9;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    background: rgba(255,255,255,0.18);
+    color:white;
+    font-size:14px;
+    transition:0.3s;
+}
+
+textarea{
+    resize:none;
+    height:100px;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#eee;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    background: rgba(255,255,255,0.28);
+    box-shadow:0 0 12px rgba(255,255,255,0.4);
+}
+
+select option{
+    color:black;
+}
+
+button{
+    margin-top:20px;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background: linear-gradient(135deg, #00f260, #0575e6);
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Feedback Form</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name please" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email please" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number please">
+
+        <label>Service Rating</label>
+        <select required>
+            <option value="">Choose Rating</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <label>Feedback Message</label>
+        <textarea placeholder="Write your feedback here..." required></textarea>
+
+        <button type="submit">Send Feedback</button>
+
+    </form>
+</div>
+
+</body>
+</html>
